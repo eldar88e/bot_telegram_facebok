@@ -29,7 +29,7 @@ Telegram::Bot::Client.run(TELEGRAM_BOT_TOKEN) do |bot|
 
       bot.api.send_message(chat_id: message.chat.id, text: "Опубликовано.")
 
-    elsif message.video
+    elsif message.text
       bot.api.send_message(chat_id: message.chat.id, text: "Это текст")
     else 
       bot.api.send_message(chat_id: message.chat.id, text: "Не верные данные!\n #{message.text}")
