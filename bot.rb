@@ -1,7 +1,6 @@
 require 'telegram/bot'
 require 'dotenv/load'
 require 'koala'
-require 'pry'
 
 TELEGRAM_BOT_TOKEN = ENV['TELEGRAM_BOT_TOKEN']
 CHAT_ID            = ENV['CHAT_ID']
