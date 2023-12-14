@@ -8,8 +8,6 @@ CHAT_ID            = ENV['CHAT_ID']
 FACEBOOK_APP_TOKEN = ENV['FACEBOOK_APP_TOKEN']
 FACEBOOK_PAGE_ID   = ENV['FACEBOOK_PAGE_ID']
 
-bot = Telegram::Bot::Client.new(TELEGRAM_BOT_TOKEN)
-
 Telegram::Bot::Client.run(TELEGRAM_BOT_TOKEN) do |bot|
 
   bot.listen do |message|
